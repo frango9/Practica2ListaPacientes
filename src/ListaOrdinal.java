@@ -128,6 +128,10 @@ class ListaOrdinal {
         return new Iterador(inicio);
     }
 
+    public void borrarAltas(){
+        
+    }
+
 
 }
 
