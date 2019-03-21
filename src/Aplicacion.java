@@ -27,8 +27,13 @@ public class Aplicacion {
             I.next().verPaciente();
         }
 
-       
 
 
+
+
+    }
+
+    private static void verAltas(ListaOrdinal lista){
+        
     }
 }
