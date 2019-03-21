@@ -133,16 +133,21 @@ class ListaOrdinal {
         Nodo actual = inicio;
         Nodo anterior = null;
 
-        while(actual.getDato() != null){
+        while(actual != null){
             if(actual.getDato().estaAlta()){
                 if(actual == inicio){
                     inicio = actual.getSiguiente();
+                    actual = inicio;
+
                 }
-                else if(actual.getSiguiente() == fin){
+                else if(actual == fin){
                     actual.setSiguiente(null);
+                    fin = anterior;
                 }
                 else {
-                    actual.getSiguiente();
+                    anterior.setSiguiente(actual.getSiguiente());
+                    actual = actual.getSiguiente();
+
                 }
 
             }

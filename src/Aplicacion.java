@@ -27,7 +27,7 @@ public class Aplicacion {
             I.next().verPaciente();
         }
 
-        //Pacientes.borrarAltas();
+       
 
 
     }
