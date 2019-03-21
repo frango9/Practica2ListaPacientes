@@ -18,6 +18,7 @@ public class Aplicacion {
         p2.darAlta();
         p3.darAlta();
 
+        Pacientes.borrarAltas();
         Iterador I = Pacientes.obtenerIterador();
 
         System.out.println("PACIENTES DEL HOSPITAL: ");
@@ -25,5 +26,9 @@ public class Aplicacion {
         while(I.hasNext()){
             I.next().verPaciente();
         }
+
+        //Pacientes.borrarAltas();
+
+
     }
 }
